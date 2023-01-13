@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ContextHook } from "../Router";
-function Dashboard() {
+function Dashboard({loginAction}) {
   let contextData = useContext(ContextHook);
 
   let navigate = useNavigate();
